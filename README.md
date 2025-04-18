@@ -17,6 +17,7 @@ python eda.py
 ```
 2. Training the model:
 ```bash
+mkdir trained
 python main.py
 ```
 3. Using the model to classify product reviews (Manually change the array in predict.py file):
@@ -26,7 +27,7 @@ python predict.py
 
 4. Hosting the model on a HTTP server
 ```bash
-python server.py
+flask --app server run
 ```
 Default URL: `http://localhost:5000`
 Classification Endpoint: `/predict`
